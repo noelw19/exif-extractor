@@ -105,7 +105,7 @@ def image_coordinates(img_path):
 
 
 if __name__ == "__main__": 
-    imgAndData = captureImgObj()
-    printMetadata(imgAndData[2])
-    getAndPrintExif(imgAndData[1])
-    image_coordinates(imgAndData[0])
+    imageToUse, image, metadata = captureImgObj()
+    printMetadata(metadata)
+    getAndPrintExif(image)
+    image_coordinates(imageToUse)
